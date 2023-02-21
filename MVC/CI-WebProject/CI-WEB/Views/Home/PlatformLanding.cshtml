@@ -1,0 +1,168 @@
+﻿<partial name="_Header" />
+<partial name="_FilterBar" />
+
+
+<link href="~/css/landingpage.css" rel="stylesheet"/>
+
+
+<div class="container">
+    <div class="filters-section d-flex align-items-center flex-wrap justify-content-center">
+    </div>
+    <div class="d-flex align-items-center justify-content-between mission-listing-title">
+        <div class="landing-page-mission-header">
+            Explore <b>72 missions</b>
+        </div>
+
+        <div>
+
+            <div class="row d-flex align-items-center">
+
+
+
+                <div class="my-3">
+                    <div class="pull-right d-flex sortby align-items-center">
+                        <div class="dropdown ms-1 pe-5 ps-2">
+                            <a class="text-reset me-4 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                               data-mdb-toggle="dropdown" aria-expanded="false">
+                                Sort By
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" id="" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group d-none d-lg-flex">
+
+                            <button class="btn" id="grid">
+                                <img src="~/Images/grid.png" alt="">
+                            </button>
+                            <button class="btn" id="list">
+                                <img src="~/Images/list.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@*All mission goes here*@
+<!-- cards -->
+<div id="products" class="row filters-div ps-3">
+    <div class="item col-xs-4 col-lg-4 col-md-6">
+        <div class="thumbnail card">
+            <div class="img-event">
+                <img class="group list-group-image img-fluid" style="width:100%;"
+                     src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability.png" alt="" />
+                <div class="landing-page-top-right"><img src="~/Images/pin.png" alt=""> Toronto</div>
+                <div class="landing-page-bottom-right d-flex flex-column">
+                    <button class="mb-2 landing-page-btn-img">
+                        <img src="~/Images/heart.png" alt="">
+                    </button><button class="landing-page-btn-img">
+                        <img src="~/Images/user.png"
+                             alt="">
+                    </button>
+                </div>
+
+                <div class="landing-page-bottom-center">Environment</div>
+            </div>
+            <div class="caption card-body">
+                <h4 class="group card-title inner list-group-item-heading">
+                    Grow Trees - on the path to Environment sustainability
+                </h4>
+                <p class="group inner landing-page-list-group-item-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+                <div class="d-flex justify-content-between landing-page-card-rating">
+                    <div>Tree Canada</div>
+                    <div>
+                        <img src="~/Images/selected-star.png" alt="">
+                        <img src="~/Images/selected-star.png" alt="">
+                        <img src="~/Images/selected-star.png" alt="">
+                        <img src="~/Images/star.png" alt="">
+                        <img src="~/Images/star.png" alt="">
+                        
+                      
+
+                    </div>
+                </div>
+                <div class="rule d-flex mt-1">
+                    <hr>
+                    <button class="date-btn mt-1">From 10/01/2019 until 25/02/2019</button>
+                    <hr>
+                </div>
+                <div class="row landing-page-box-border">
+                    <div class="col-6 col-md-6 d-flex align-items-center">
+                        <p class="lead me-2 pt-2">
+                            <img src="~/Images/Seats-left.png" alt="">
+                            <div>
+                                <div>10</div>
+                                <div class="landing-page-card-vol-small">Seats Left</div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex align-items-center">
+                        <p class="lead me-2 pt-2">
+                            <img src="~/Images/deadline.png" alt="">
+                            <div>
+                                <div>09/01/2023</div>
+                                <div class="landing-page-card-vol-small">Deadline</div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="">
+                        <a class="btn mt-2 landing-page-apply-mission-btn" href="#">
+                            Apply <img src="~/Images/right-arrow.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+@*pagination*@
+<div class="d-flex justify-content-center">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item "><a class="page-link page-item-current" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="~/js/index.js"></script>
+    

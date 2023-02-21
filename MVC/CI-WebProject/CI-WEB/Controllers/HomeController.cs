@@ -37,6 +37,11 @@ namespace Web_Pages.Controllers
             return View();
         }
 
+        public IActionResult PlatformLanding()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

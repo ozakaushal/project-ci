@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <!-- Load Font Awesome Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/magic.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/landingpage.css">
+</head>
+
+<body>
+  <nav class="py-2 bg-light border-bottom">
+
+    <!-- side bar starts here -->
+    <div class="flex-shrink-0 p-3 bg-white sidebar-filter" style="width: 280px;">
+      <i class="bi bi-x" id="close-btn"></i>
+      <a href="/" class="d-flex align-items-center pb-3 mb-1 link-dark text-decoration-none border-bottom ">
+        
+        <span class="fs-5 fw-semibold">Filters</span>
+      </a>
+      <ul class="list-unstyled ps-0 d-flex flex-column justify-content-center ms-4">
+        <li class="mb-1">
+          <a class="d-inline-flex align-items-center rounded border-0 collapsed dropdown-toggle sidebar-filter-button"
+            data-bs-toggle="collapse" data-bs-target="#country-collapse" aria-expanded="true">
+            Country
+        </a>
+        
+          <div class="collapse show ms-3" id="country-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small d-flex flex-column">
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li> -->
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="india" id="" value="india">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">india</a></li>
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="USA" id="" value="USA">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">USA</a></li>
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="canada" id="" value="canada">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">canada</a></li>
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li> -->
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li> -->
+            </ul>
+          </div>
+        </li>
+        
+        <li class="mb-1">
+          <a class="d-inline-flex align-items-center rounded border-0 collapsed dropdown-toggle sidebar-filter-button"
+            data-bs-toggle="collapse" data-bs-target="#city-collapse" aria-expanded="true">
+            City
+        </a>
+       
+          <div class="collapse show ms-3" id="city-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small d-flex flex-column">
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li> -->
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="india" id="" value="india">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">india</a></li>
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="USA" id="" value="USA">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">USA</a></li>
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="canada" id="" value="canada">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">canada</a></li>
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li> -->
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li> -->
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <a class="d-inline-flex align-items-center rounded border-0 collapsed dropdown-toggle sidebar-filter-button"
+            data-bs-toggle="collapse" data-bs-target="#theme-collapse" aria-expanded="true">
+            Theme
+        </a>
+   
+          <div class="collapse show ms-3" id="theme-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small d-flex flex-column">
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li> -->
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="india" id="" value="india">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">india</a></li>
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="USA" id="" value="USA">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">USA</a></li>
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="canada" id="" value="canada">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">canada</a></li>
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li> -->
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li> -->
+            </ul>
+          </div>
+        </li>
+
+        <li class="mb-1">
+          <a class="d-inline-flex align-items-center rounded border-0 collapsed dropdown-toggle sidebar-filter-button"
+            data-bs-toggle="collapse" data-bs-target="#skills-collapse" aria-expanded="true">
+            Skills
+        </a>
+        
+          <div class="collapse show ms-3" id="skills-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small d-flex flex-column">
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li> -->
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="india" id="" value="india">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">india</a></li>
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="USA" id="" value="USA">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">USA</a></li>
+              <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="canada" id="" value="canada">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">canada</a></li>
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li> -->
+              <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li> -->
+            </ul>
+          </div>
+        </li>
+        <hr>
+
+       
+        <li class="mb-1 story-sidebar" id="stories-li"><a class="border-0 collapsed sidebar-filter-button"
+            >
+          Stories
+      </a></li>
+
+        <li class="mb-1 ms-1 policy-sidebar">
+          <a class="d-inline-flex align-items-center rounded border-0 collapsed dropdown-toggle sidebar-filter-button"
+          data-bs-toggle="collapse" data-bs-target="#policy-collapse" aria-expanded="true">
+          Policy
+      </a>
+        <div class="collapse show ms-3" id="policy-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small d-flex flex-column">
+            <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li> -->
+            <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="india" id="" value="india">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">india</a></li>
+            <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="USA" id="" value="USA">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">USA</a></li>
+            <li class="d-inline-flex align-items-center text-decoration-none rounded"><input type="checkbox" name="canada" id="" value="canada">&nbsp;<a href="#" class="link-dark d-inline-flex text-decoration-none rounded">canada</a></li>
+            <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Updates</a></li> -->
+            <!-- <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Reports</a></li> -->
+          </ul>
+        </div>
+        </li>
+      </ul>
+    </div>
+    <!-- side bar ends0 here -->
+
+
+
+    <div class="container d-flex">
+      <i class="bi bi-list d-flex justify-content-center align-items-center me-3" id="menu"></i>
+      <i class="bi bi-search d-flex justify-content-center align-items-center ms-5 mt-2" id="navbar-search-in-small-devices"></i>
+      <input type="search" name="search-in-small-devices" id="search-input-navbar-small" placeholder="Search.." class="ms-5 p-0 w-50 ps-2 spaceInUp">
+      <ul class="nav me-auto d-flex align-items-center gap-3">
+
+        <li class="nav-item story-navbar"><a href="#" class="nav-link link-dark px-2">Stories</a></li>
+        
+        <!-- <div class="navbar-collapse" id="navbarNavDarkDropdown"> -->
+          <ul class="navbar-nav justify-content-center">
+            <li class="nav-item dropdown policy-navbar">
+              <a class="dropdown-toggle text-decoration-none text-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                Policy
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+        
+      <!-- </div> -->
+
+      <div class="dropdown text-end d-flex align-items-center">
+        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="mdo" class="rounded-circle" width="32" height="32">
+          <span class="user-name">Kaushal</span>
+        </a>
+        <ul class="dropdown-menu text-small">
+          <li><a class="dropdown-item" href="#">New project...</a></li>
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Sign out</a></li>
+        </ul>
+      </div>
+
+
+
+
+    </div>
+  </nav>
+
+    <div class="related-mission-text mt-3">
+      <h2 class="text-center">Related Missions</h2>
+    </div>
+<div class="mt-3 ms-3">
+  <div id="products" class="view-group row ps-2 pe-2">
+    <div class="item col-lg-4 col-md-6 col-sm-12">
+        <div class="thumbnail card">
+            <div class="img-event">
+                <img class="group list-group-image img-fluid" style="width:100%;"
+                     src="images/Grow-Trees-On-the-path-to-environment-sustainability.png" alt="" />
+                <div class="landing-page-top-right"><img src="images/Assets/pin.png" alt=""> Toronto</div>
+                <div class="landing-page-bottom-right d-flex flex-column">
+                    <button class="mb-2 landing-page-btn-img">
+                        <img src="images/heart.png" alt="">
+                    </button><button class="landing-page-btn-img">
+                        <img src="images/Assets/user.png"
+                             alt="">
+                    </button>
+                </div>
+
+                <div class="landing-page-bottom-center">Environment</div>
+            </div>
+            <div class="caption card-body">
+                <h4 class="group card-title inner list-group-item-heading">
+                    Grow Trees - on the path to Environment sustainability
+                </h4>
+                <p class="group inner landing-page-list-group-item-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+                <div class="d-flex justify-content-between landing-page-card-rating">
+                    <div>Tree Canada</div>
+                    <div>
+                        <img src="images/Assets/selected-star.png" alt="">
+                        <img src="images/Assets/selected-star.png" alt="">
+                        <img src="images/Assets/selected-star.png" alt="">
+                        <img src="images/Assets/star.png" alt="">
+                        <img src="images/Assets/star.png" alt="">
+                      
+                    </div>
+                </div>
+                <div class="rule d-flex mt-1">
+                        <hr>
+                        <button class="date-btn mt-1">From 10/01/2019 until 25/02/2019</button>
+                        <hr>
+                </div>
+                <div class="row landing-page-box-border">
+                    <div class="col-6 col-md-6 d-flex align-items-center">
+                        <p class="lead me-2 pt-2">
+                            <img src="images/Assets/Seats-left.png" alt="">
+                            <div>
+                                <div>10</div>
+                                <div class="landing-page-card-vol-small">Seats Left</div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex align-items-center">
+                        <p class="lead me-2 pt-2">
+                            <img src="images/Assets/deadline.png" alt="">
+                            <div>
+                                <div>09/01/2023</div>
+                                <div class="landing-page-card-vol-small">Deadline</div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="">
+                        <a class="btn mt-2 landing-page-apply-mission-btn" href="#">
+                            Apply <img src="~/images/right-arrow.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd card -->
+
+    <div class="item col-lg-4 col-md-6 col-sm-12">
+        <div class="thumbnail card">
+            <div class="img-event">
+                <img class="group list-group-image img-fluid" style="width:100%;"
+                     src="images/Grow-Trees-On-the-path-to-environment-sustainability.png" alt="" />
+                <div class="landing-page-top-right"><img src="images/Assets/pin.png" alt=""> Toronto</div>
+                <div class="landing-page-bottom-right d-flex flex-column">
+                    <button class="mb-2 landing-page-btn-img">
+                        <img src="images/heart.png" alt="">
+                    </button><button class="landing-page-btn-img">
+                        <img src="images/Assets/user.png"
+                             alt="">
+                    </button>
+                </div>
+
+                <div class="landing-page-bottom-center">Environment</div>
+            </div>
+            <div class="caption card-body">
+                <h4 class="group card-title inner list-group-item-heading">
+                    Grow Trees - on the path to Environment sustainability
+                </h4>
+                <p class="group inner landing-page-list-group-item-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+                <div class="d-flex justify-content-between landing-page-card-rating">
+                    <div>Tree Canada</div>
+                    <div>
+                        <img src="images/Assets/selected-star.png" alt="">
+                        <img src="images/Assets/selected-star.png" alt="">
+                        <img src="images/Assets/selected-star.png" alt="">
+                        <img src="images/Assets/star.png" alt="">
+                        <img src="images/Assets/star.png" alt="">
+                      
+                    </div>
+                </div>
+                <div class="rule d-flex mt-1">
+                        <hr>
+                        <button class="date-btn mt-1">From 10/01/2019 until 25/02/2019</button>
+                        <hr>
+                </div>
+                <div class="row landing-page-box-border">
+                    <div class="col-6 col-md-6 d-flex align-items-center">
+                        <p class="lead me-2 pt-2">
+                            <img src="images/Assets/Seats-left.png" alt="">
+                            <div>
+                                <div>10</div>
+                                <div class="landing-page-card-vol-small">Seats Left</div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex align-items-center">
+                        <p class="lead me-2 pt-2">
+                            <img src="images/Assets/deadline.png" alt="">
+                            <div>
+                                <div>09/01/2023</div>
+                                <div class="landing-page-card-vol-small">Deadline</div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="">
+                        <a class="btn mt-2 landing-page-apply-mission-btn" href="#">
+                            Apply <img src="~/images/right-arrow.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 3rd card -->
+    <div class="item col-lg-4 col-md-6 col-sm-12">
+        <div class="thumbnail card">
+            <div class="img-event">
+                <img class="group list-group-image img-fluid" style="width:100%;"
+                     src="images/Grow-Trees-On-the-path-to-environment-sustainability.png" alt="" />
+                <div class="landing-page-top-right"><img src="images/Assets/pin.png" alt=""> Toronto</div>
+                <div class="landing-page-bottom-right d-flex flex-column">
+                    <button class="mb-2 landing-page-btn-img">
+                        <img src="images/heart.png" alt="">
+                    </button><button class="landing-page-btn-img">
+                        <img src="images/Assets/user.png"
+                             alt="">
+                    </button>
+                </div>
+
+                <div class="landing-page-bottom-center">Environment</div>
+            </div>
+            <div class="caption card-body">
+                <h4 class="group card-title inner list-group-item-heading">
+                    Grow Trees - on the path to Environment sustainability
+                </h4>
+                <p class="group inner landing-page-list-group-item-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+                <div class="d-flex justify-content-between landing-page-card-rating">
+                    <div>Tree Canada</div>
+                    <div>
+                        <img src="images/Assets/selected-star.png" alt="">
+                        <img src="images/Assets/selected-star.png" alt="">
+                        <img src="images/Assets/selected-star.png" alt="">
+                        <img src="images/Assets/star.png" alt="">
+                        <img src="images/Assets/star.png" alt="">
+                      
+                    </div>
+                </div>
+                <div class="rule d-flex mt-1">
+                        <hr>
+                        <button class="date-btn mt-1">From 10/01/2019 until 25/02/2019</button>
+                        <hr>
+                </div>
+                <div class="row landing-page-box-border">
+                    <div class="col-6 col-md-6 d-flex align-items-center">
+                        <p class="lead me-2 pt-2">
+                            <img src="images/Assets/Seats-left.png" alt="">
+                            <div>
+                                <div>10</div>
+                                <div class="landing-page-card-vol-small">Seats Left</div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-6 d-flex align-items-center">
+                        <p class="lead me-2 pt-2">
+                            <img src="images/Assets/deadline.png" alt="">
+                            <div>
+                                <div>09/01/2023</div>
+                                <div class="landing-page-card-vol-small">Deadline</div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="">
+                        <a class="btn mt-2 landing-page-apply-mission-btn" href="#">
+                            Apply <img src="~/images/right-arrow.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+<script src="js/index.js"></script>
+</html>
