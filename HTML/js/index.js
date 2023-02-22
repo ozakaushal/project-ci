@@ -117,13 +117,6 @@ function removeElement(value) {
 
 
 
-menu.addEventListener("click", () => {
-  sidebar.classList.toggle("show-sidebar");
-})
-
-close.addEventListener("click", () => {
-  sidebar.classList.remove("show-sidebar");
-})
 
 
 // Get the elements with class="column"
@@ -225,14 +218,17 @@ $(document).ready(function () {
 });
 
 
-var harsh = filtersSection.getElementsByTagName("span");
-console.log(harsh);
-
-var btn = document.querySelector("#clear-all");
 
 
 
 
+menu.addEventListener("click", () => {
+  sidebar.classList.toggle("show-sidebar");
+})
+
+close.addEventListener("click", () => {
+  sidebar.classList.remove("show-sidebar");
+})
 
 
 
