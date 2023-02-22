@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s/JDH91LxHVfPNuXOBb/9sX+OUX2Dw/501+lpnO5i+w=",
+  "Hash": "HJg4l5RbaM1b2qgi/spLQ1Q5lkMYNI3rxjamLv+gnYU=",
   "Source": "CI-WEB",
   "BasePath": "_content/CI-WEB",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\landingpage.css"
+    },
+    {
+      "Identity": "G:\\ci project\\MVC\\CI-WebProject\\CI-WEB\\wwwroot\\css\\missionDetails.css",
+      "SourceId": "CI-WEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\ci project\\MVC\\CI-WebProject\\CI-WEB\\wwwroot\\",
+      "BasePath": "_content/CI-WEB",
+      "RelativePath": "css/missionDetails.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\missionDetails.css"
     },
     {
       "Identity": "G:\\ci project\\MVC\\CI-WebProject\\CI-WEB\\wwwroot\\css\\site.css",
