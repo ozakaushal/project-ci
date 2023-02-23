@@ -2,6 +2,10 @@
   display: none;
 }
 
+.fav-active{
+  color:#FFFF00;
+}
+
 .landing-page-mission-header {
   font-size: 30px;
 }
@@ -203,11 +207,17 @@
       height: 325px;
   }
 
-.landing-page-apply-mission-btn,
-.landing-page-apply-mission-btn:hover {
+.landing-page-apply-mission-btn{
   border: 2px solid #F88735;
   border-radius: 30px;
   color: #F88735;
+  font-weight: 500;
+}
+.landing-page-apply-mission-btn:hover {
+  border: 2px solid #F88735;
+  border-radius: 30px;
+  background-color: #F88634;
+  color: #fff;
   font-weight: 500;
 }
 

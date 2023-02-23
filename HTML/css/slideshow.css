@@ -2,7 +2,11 @@
     box-sizing: border-box;
 }
 
-
+.fav-active{
+    color:#FFFF00;
+    
+}
+  
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
@@ -25,7 +29,7 @@
     cursor: pointer;
     position: absolute;
     top: 55px;
-    
+
     width: auto;
     padding: 16px;
     margin-top: -50px;
@@ -33,7 +37,7 @@
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
-    z-index:15;
+    z-index: 15;
     user-select: none;
     -webkit-user-select: none;
 }
@@ -46,13 +50,13 @@
     border-radius: 3px 0 0 3px;
 } */
 
-.prev{
+.prev {
     z-index: 9;
     cursor: pointer;
     position: absolute;
     top: 50px;
     padding: 3% 1%;
-    left:13px;
+    left: 13px;
     /* padding: 7px; */
     border-radius: 3px 0 0 3px;
     height: -webkit-fill-available;
@@ -73,8 +77,8 @@
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-    opacity:0.5;
-    color:#fff;
+    opacity: 0.5;
+    color: #fff;
 }
 
 /* Number text (1/3 etc) */
@@ -102,11 +106,19 @@
 
 /* Six columns side by side */
 
-    .column {
-        float: left;
-        padding: 0;
-        width: 16.4%;
-    }
+/* .column {
+    float: left;
+    padding: 0;
+    width: 16.4%;
+} */
+
+.column {
+    float: left;
+    padding: 0;
+    width: 16.30%;
+    /* margin-left: 4px; */
+    /* gap: 5px; */
+}
 
 
 /* Add a transparency effect for thumnbail images */
@@ -122,60 +134,64 @@
 .mission-title p {
     color: #414141;
     font-size: 2.1rem;
-    line-height:1;
+    line-height: 1;
+    margin-top:28px;
 }
 
 .mission-desc p {
-    color:#414141;
-    font-size:1.063rem;
+    color: #414141;
+    font-size: 1.063rem;
 }
 
-.mission-goal{
-    position:absolute;
+.mission-goal {
+    position: absolute;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E8E8E8;
     border-radius: 21px;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
     top: -30px;
     left: 38%;
 }
 
-.progress-bar{
-    background:#F88634;
+.progress-bar {
+    background: #F88634;
 }
 
-.seats-and-goal{
-    margin-top:-2%;
+.seats-and-goal {
+    margin-top: -2%;
 }
 
 /* .facility-btns div i{
     background: #757575 0% 0% no-repeat padding-box;
 } */
 
-.facility-btns div{
+.facility-btns div {
     width: 280px;
-height: 50px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 2px solid #757575;
-border-radius: 25px;
-opacity: 1;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #757575;
+    border-radius: 25px;
+    opacity: 1;
 }
 
 .stars {
     top: -31px;
     left: 43%;
-    z-index:5;
-    background:#fff;
-    color:#757575;
+    z-index: 5;
+    background: #fff;
+    color: #757575;
 }
 
-.icon{
-    color:#757575;
+.icon {
+    color: #757575;
 }
 
-#city, #Theme, #Date, #Organization{
-    color:#757575;
+#city,
+#Theme,
+#Date,
+#Organization {
+    color: #757575;
 }
 
 /* .more-mission-info div{
@@ -186,7 +202,10 @@ opacity: 1;
 padding:3px;
 } */
 
-.city-info, .date-info, .company-info, .theme-info{
+.city-info,
+.date-info,
+.company-info,
+.theme-info {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #E8E8E8;
     border-radius: 3px;
@@ -194,79 +213,191 @@ padding:3px;
     padding-left: 14px;
     padding-right: 40px;
     padding-top: 4px;
-    z-index:7;
+    z-index: 7;
 }
 
-.apply-now a{
+.apply-now a {
     border: 2px solid #F88735;
     border-radius: 30px;
     color: #F88735;
     font-weight: 500;
+    width:25%;
 }
 
-#facility-one{
-    display:none !important;
+.apply-now a:hover {
+    border: 2px solid #F88735;
+    border-radius: 30px;
+    background-color:#F88735;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* .apply-now a:hover, .apply-now a i{
+    color:#fff;
+} */
+
+
+#facility-one {
+    display: none !important;
 }
 
 
 
 /* css for middle data */
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
     color: #414141;
-    border-bottom:3px solid #000;
+    border-bottom: 3px solid #000;
+
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #414141;
+}
+
+.introduction p,
+.challenge p,
+.pdf a {
+    color: #414141 !important;
+}
+
+.mission-req {
+    border: 1px solid #414141;
+    padding: 1rem;
+}
+
+.mission-req h3 {
+    font-size: 22px;
+}
+
+
+.post-comment {
+
+    border: 2px solid #F88735;
+    border-radius: 30px !important;
+    color: #F88735;
+    font-weight: 500;
+    width:25%;
+
+}
+
+.comment-list{
+    overflow: scroll;
+    height:550px;
+    padding:5%;
+
+}
+.single-comment{
+    padding:2%;
+    margin-top:2%;
+    border-radius: 50px;
+    background: #fff;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+    border-radius:10px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
     
 }
 
-.nav-tabs{
-    border-bottom:1px solid #414141;
+.user-profile-image img{
+    border-radius: 50%;
+    width:60px;
+    height:60px;
 }
 
-.introduction p, .challenge p, .pdf a{
-    color:#414141 !important;
+.user-details p{
+    line-height:0;
 }
 
-.mission-req{
-    border:1px solid #414141;
-    padding:1rem;
+#comment-user-name{
+    margin-top:12px !important; 
 }
 
-.mission-req h3{
-    font-size:22px;
+#comment-posted-date{
+    margin-top:20px !important; 
 }
 
+#comment-actual-text{
+    line-height:3;
+}
 
+.volunteers-grid{
+    display:grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(21%, 25%)); */
+    grid-template-columns:auto auto auto;
+}
 
+.circle{
+    border-radius: 50%;
+}
 
+.person-list img{
+    height:70px;
+    width:70px;
+}
 
+hr{
+    border: 1px solid #000 !important;
+    width: 100%;
+}
 
+.mission-req, .volunteers-list{
+    position:relative;
+}
 
+/* #underline{
+    position:absolute;
+    top:50px;
+    width:35%;
+    border:1px solid #000;
+} */
 
+#underline {
+    position: absolute;
+    top: 58px;
+    left: 15px;
+    width: 35%;
+    border: 1px solid #000;
+}
+/* #underline1 {
+    position: absolute;
+    top: 58px;
+    left: 18px;
+    width: 35%;
+    border: 1px solid #000;
+} */
+#underline1 {
+    position: absolute;
+    top: 74.2px;
+    left: 16px;
+    width: 35%;
+    border: 1px solid #000;
+}
+#horizontal-line{
+    width:90%;
+}
 
-
-
-
-
-@media only screen and (max-width: 1300px){
-    #facility-one{
-        display:flex !important;
+@media only screen and (max-width: 1300px) {
+    #facility-one {
+        display: flex !important;
     }
 
-    #facility-two{
-        display:none !important;
+    #facility-two {
+        display: none !important;
     }
 
-    .apply-now{
-        width:100%;
+    .apply-now {
+        width: 100%;
     }
+
     .apply-now a {
-       width:90%;
+        width: 90%;
     }
-    
+
 }
 
 
-@media only screen and (max-width:1029px){
+@media only screen and (max-width:1029px) {
     .mission-title p {
         color: #414141;
         font-size: 1.8rem;
@@ -278,105 +409,120 @@ padding:3px;
         font-size: 1rem;
     }
 
-   
+
 }
 
-@media only screen and (max-width:992px){
-    .mission-details{
-        padding:3rem;
-        padding-top:0;
+@media only screen and (max-width:992px) {
+    .mission-details {
+        padding: 3rem;
+        padding-top: 0;
     }
 
-    .fav{
-        width:50% !important;
+    .fav {
+        width: 50% !important;
     }
 
-    .recommend{
-        width:50% !important;
+    .recommend {
+        width: 50% !important;
     }
 
-    .city-info, .date-info, .company-info, .theme-info {
-    
-        width:24%;
+    .city-info,
+    .date-info,
+    .company-info,
+    .theme-info {
+
+        width: 24%;
     }
 }
 
-@media only screen and (max-width: 743px){
+@media only screen and (max-width: 743px) {
     .mission-title p {
-        
+
         font-size: 1.5rem;
-        
+
     }
 
     .mission-desc p {
-        
+
         font-size: 0.8rem;
     }
 }
 
-@media only screen and (max-width:671px){
+@media only screen and (max-width:671px) {
 
-    .more-mission-info{
-        gap:2rem !important;
-        margin-left:3rem;
+    .more-mission-info {
+        gap: 2rem !important;
+        margin-left: 3rem;
     }
-    .city-info, .date-info, .company-info, .theme-info {
-      
-        width:45%;
-    }
-}
 
-@media only screen and (max-width:569px){
+    .city-info,
+    .date-info,
+    .company-info,
+    .theme-info {
 
-    .more-mission-info{
-        gap:1.8rem !important;
-        margin-left:2rem;
-    }
-    .city-info, .date-info, .company-info, .theme-info {
-      
-        width:45%;
+        width: 45%;
     }
 }
 
-@media only screen and (max-width:531px){
+@media only screen and (max-width:569px) {
 
-    .more-mission-info{
-        gap:1.8rem !important;
-        margin:auto;
-        justify-content:center !important;
-    }
-    .city-info, .date-info, .company-info, .theme-info {
-      
-        width:65%;
+    .more-mission-info {
+        gap: 1.8rem !important;
+        margin-left: 2rem;
     }
 
-    .fav{
-        width:43% !important;
-        height:40px !important;
+    .city-info,
+    .date-info,
+    .company-info,
+    .theme-info {
+
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:531px) {
+
+    .more-mission-info {
+        gap: 1.8rem !important;
+        margin: auto;
+        justify-content: center !important;
     }
 
-    .recommend{
-        width:43% !important;
-        height:40px !important;
+    .city-info,
+    .date-info,
+    .company-info,
+    .theme-info {
+
+        width: 65%;
+    }
+
+    .fav {
+        width: 43% !important;
+        height: 40px !important;
+    }
+
+    .recommend {
+        width: 43% !important;
+        height: 40px !important;
     }
 
 }
 
-@media only screen and (max-width:471px){
-    #facility-one{
-        flex-direction:column !important;
-        width:100%;
-        gap:1rem;
+@media only screen and (max-width:471px) {
+    #facility-one {
+        flex-direction: column !important;
+        width: 100%;
+        gap: 1rem;
     }
 
-    .fav{
-        width:80% !important;
-        height:40px !important;
+    .fav {
+        width: 80% !important;
+        height: 40px !important;
     }
 
-    .recommend{
-        width:80% !important;
-        height:40px !important;
+    .recommend {
+        width: 80% !important;
+        height: 40px !important;
     }
 
     .seats-and-goal {
@@ -384,67 +530,100 @@ padding:3px;
     }
 
     .mission-title p {
-        
+
         font-size: 1.4rem;
-        
+
     }
 
     .mission-desc p {
-        
+
         font-size: 0.7rem;
     }
 
 
 }
 
-@media only screen and (max-width:371px){
+@media only screen and (max-width:371px) {
     .mission-title p {
-        
+
         font-size: 1.2rem;
-        
+
     }
 
     .mission-desc p {
-        
+
         font-size: 0.55rem;
     }
 
-    #progress-mission{
-        width:23px;
-        height:23px;
+    #progress-mission {
+        width: 23px;
+        height: 23px;
     }
 
-    #seats{
-        width:23px !important;
-        height:23px !important;
+    #seats {
+        width: 23px !important;
+        height: 23px !important;
     }
 
 
 }
 
-@media only screen and (max-width:344px){
+@media only screen and (max-width:344px) {
     .seats-and-goal {
         flex-direction: column !important;
-        margin-left:3rem;
-        align-items:flex-start !important;
+        margin-left: 3rem;
+        align-items: flex-start !important;
     }
 
-    .city-info, .date-info, .company-info, .theme-info {
-      
-        width:85%;
+    .city-info,
+    .date-info,
+    .company-info,
+    .theme-info {
+
+        width: 85%;
     }
 
     .stars {
         top: -31px;
         left: 34%;
-        z-index:5;
-        background:#fff;
-        color:#757575;
+        z-index: 5;
+        background: #fff;
+        color: #757575;
     }
 
-    .mission-goal{
-       
+    .mission-goal {
+
         top: -30px;
         left: 25%;
+    }
+}
+
+.goal-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.goal-text button{
+    border-radius: 22px;
+    background-color:#fff;
+}
+
+
+/* media query for underline */
+
+@media only screen and (max-width:936px){
+    #underline {
+        
+        top: 56px;
+        left: 15px;
+        
+    }
+}
+@media only screen and (max-width:550px){
+    #underline {
+        
+        top: 53px;
+        left: 15px;
+        
     }
 }
