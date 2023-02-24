@@ -47,6 +47,16 @@ namespace Web_Pages.Controllers
             return View();
         }
 
+        public IActionResult Story()
+        {
+            return View();
+        }
+
+        public IActionResult ShareStory()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

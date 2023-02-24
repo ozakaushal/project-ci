@@ -1,0 +1,121 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+          integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <!-- Load Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="~/css/landingpage.css" rel="stylesheet" />
+    <link href="~/css/missiondetails.css" rel="stylesheet" />
+
+
+    <style>
+        .tox-statusbar__branding, .tox-notification--warning {
+            display:none !important;
+        }
+    </style>
+
+</head>
+<body>
+    @*navbar is same *@
+        <partial name="_Header" />
+    @*navbar is same *@
+
+
+    @*main form*@
+    <div class="container">
+        <h1 class="mt-4">Share your Story</h1>
+        <div class="form row mt-5">
+            <div class="col-lg-4">
+                <div class="d-flex flex-column">
+                <label for="mission_name">Select Mission</label>
+                <select class="form-select" aria-label="Default select example" name="mission_name" id="mission_name">
+                    <option value="something">Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="d-flex flex-column">
+                <label for="story_title">Story Title</label>
+                    <input type="text" placeholder="Enter story title" name="story_title" id="story_title" class="form-control" />
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="d-flex flex-column">
+                    <label for="story_date">Date</label>
+                    <input type="date" placeholder="Select date" name="story_date" id="story_date" class="form-control" />
+                </div>
+            </div>
+
+
+            <div class="col-lg-12">
+                <div class="d-flex flex-column">
+                    <label for="story_text">Date</label>
+
+                    <textarea name="textarea" id="default" name="story_text"></textarea>
+                        @* <input type="submit" value="submit">*@
+                   
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <label for="video_url">Enter Video URL</label>
+                <input type="url" placeholder="Enter video url" name="video_url" id="video_url" class="form-control" />
+            </div>
+        </div>
+    </div>
+    @*main form*@
+</body>
+<script src="~/js/index.js" defer></script>
+
+
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea#default',
+
+        height: 300,
+        plugins: [
+            'advlist', 'autolink', 'link', 'image', 'lists', 'charmap', 'prewiew', 'anchor', 'pagebreak',
+            'searchreplace', 'wordcount', 'visualblocks', 'code', 'fullscreen', 'insertdatetime', 'media',
+            'table', 'emoticons', 'template', 'codesample'
+        ],
+        toolbar: 'undo redo | styles | bold italic underline | alignleft aligncenter alignright alignjustify |' +
+            'bullist numlist outdent indent | link image | print preview media fullscreen | ' +
+            'forecolor backcolor emoticons',
+        menu: {
+            favs: { title: 'menu', items: 'code visualaid | searchreplace | emoticons' }
+        },
+        menubar: 'favs file edit view insert format tools table',
+        content_style: 'body{font-family:Helvetica,Arial,sans-serif; font-size:16px}'
+    });
+</script>
+</html>

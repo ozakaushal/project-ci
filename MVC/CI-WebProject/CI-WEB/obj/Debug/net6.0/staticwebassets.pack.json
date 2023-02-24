@@ -613,6 +613,10 @@
       "PackagePath": "staticwebassets\\css\\landingpage.css"
     },
     {
+      "Id": "G:\\ci project\\MVC\\CI-WebProject\\CI-WEB\\wwwroot\\css\\mediaForStory.css",
+      "PackagePath": "staticwebassets\\css\\mediaForStory.css"
+    },
+    {
       "Id": "G:\\ci project\\MVC\\CI-WebProject\\CI-WEB\\wwwroot\\css\\missionDetails.css",
       "PackagePath": "staticwebassets\\css\\missionDetails.css"
     },

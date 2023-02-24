@@ -1,0 +1,373 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+          integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <!-- Load Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="~/css/landingpage.css" rel="stylesheet" />
+    <link href="~/css/missiondetails.css" rel="stylesheet" />
+
+
+    <style>
+        .banner-wrapper {
+            min-width: 100vw;
+            width: 100vw;
+            height: 45vh;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: 100%;
+            min-width: 100%;
+        }
+
+            .banner-image img {
+                width: 100%;
+                min-width: 100%;
+                object-fit: cover;
+                height: 100%;
+                object-position: 0 40%;
+                filter: brightness(40%);
+            }
+
+        .center {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1rem;
+            z-index: 100;
+            width: 50%;
+        }
+
+
+        #banner-text {
+            color: #fff;
+            z-index: 100;
+        }
+
+        .share-story-button {
+            color: #fff;
+            border: 1px solid #fff;
+            background: transparent;
+            padding: 5px;
+            width: 40%;
+            min-width: 25%;
+            border-radius: 25px;
+            transition: all 500ms;
+        }
+
+
+            .share-story-button:hover {
+                color: #000;
+                border: 1px solid #fff;
+                background: #fff;
+                padding: 5px;
+                border-radius: 25px;
+            }
+
+            .card{
+                position:relative;
+            transition: all 300ms ease-in-out;
+            }
+
+     
+
+        .center-card {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 34%;
+            width: 100%;
+            left: 50%;
+            opacity:0;
+            transition: all 300ms ease-in-out;
+           
+        }
+
+      
+
+        #story-profile-img{
+            border-radius:50%;
+        }
+      
+        .card:hover .card-img-top {
+            cursor:pointer;
+            filter:brightness(40%);
+           
+        }
+
+            .card:hover .center-card{
+                opacity:1;
+                z-index:101;
+                top:30%;
+            }
+
+
+            .banner-image:hover .center button{
+                width:50%;
+            }
+
+        
+    </style>
+    <link href="~/css/mediaforstory.css" rel="stylesheet" />
+</head>
+
+
+<body>
+
+
+    @*in story listing page header and navbar are the same*@
+
+
+    @*header view*@
+    <partial name="_Header" />
+    @*header view*@
+
+
+    @*filter view*@
+    <partial name="_FilterBar" />
+    @*filter view*@
+
+
+    @*Main data *@
+    <div class="banner-wrapper">
+        <div class="banner-image">
+            <img src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-login.png" />
+            <div class="center text-center" id="banner-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque orci massa, hendrerit in viverra vel, sagittis nec dui. Duis in magna elit.
+                </p>
+
+                <button class="share-story-button" asp-controller="Home" asp-action="ShareStory">Share your Story&nbsp;<i class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    @*stories *@
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap" />
+                    <div class="center-card text-center" id="banner-text">
+                       <button class="share-story-button">View Details&nbsp;<i class="bi bi-arrow-right"></i></button>
+                       </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Story title goes here</h5>
+                            <p class="card-text">story desc goes here</p>
+                            <div class="story-profile d-flex gap-2 align-items-center">
+                                <img src="~/Images/volunteer1.png" id="story-profile-img" height="40px" width="40px"/>
+                                <span>kaushal oza</span>
+                            </div>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                </div>
+            <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 100%;;">
+                    <img class="card-img-top" src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap" />
+                    <div class="center-card text-center" id="banner-text">
+                        <button class="share-story-button">View Details&nbsp;<i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Story title goes here</h5>
+                        <p class="card-text">story desc goes here</p>
+                        <div class="story-profile d-flex gap-2 align-items-center">
+                            <img src="~/Images/volunteer1.png" id="story-profile-img" height="40px" width="40px" />
+                            <span>kaushal oza</span>
+                        </div>
+                        @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 100%;;">
+                    <img class="card-img-top" src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap" />
+                    <div class="center-card text-center" id="banner-text">
+                       <button class="share-story-button">View Details&nbsp;<i class="bi bi-arrow-right"></i></button>
+                       </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Story title goes here</h5>
+                            <p class="card-text">story desc goes here</p>
+                            <div class="story-profile d-flex gap-2 align-items-center">
+                                <img src="~/Images/volunteer1.png" id="story-profile-img" height="40px" width="40px"/>
+                                <span>kaushal oza</span>
+                            </div>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 100%;;">
+                    <img class="card-img-top" src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap" />
+                    <div class="center-card text-center" id="banner-text">
+                       <button class="share-story-button">View Details&nbsp;<i class="bi bi-arrow-right"></i></button>
+                       </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Story title goes here</h5>
+                            <p class="card-text">story desc goes here</p>
+                            <div class="story-profile d-flex gap-2 align-items-center">
+                                <img src="~/Images/volunteer1.png" id="story-profile-img" height="40px" width="40px"/>
+                                <span>kaushal oza</span>
+                            </div>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 100%;;">
+                    <img class="card-img-top" src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap" />
+                    <div class="center-card text-center" id="banner-text">
+                       <button class="share-story-button">View Details&nbsp;<i class="bi bi-arrow-right"></i></button>
+                       </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Story title goes here</h5>
+                            <p class="card-text">story desc goes here</p>
+                            <div class="story-profile d-flex gap-2 align-items-center">
+                                <img src="~/Images/volunteer1.png" id="story-profile-img" height="40px" width="40px"/>
+                                <span>kaushal oza</span>
+                            </div>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 100%;;">
+                    <img class="card-img-top" src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap" />
+                    <div class="center-card text-center" id="banner-text">
+                       <button class="share-story-button">View Details&nbsp;<i class="bi bi-arrow-right"></i></button>
+                       </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Story title goes here</h5>
+                            <p class="card-text">story desc goes here</p>
+                            <div class="story-profile d-flex gap-2 align-items-center">
+                                <img src="~/Images/volunteer1.png" id="story-profile-img" height="40px" width="40px"/>
+                                <span>kaushal oza</span>
+                            </div>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 100%;;">
+                    <img class="card-img-top" src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap" />
+                    <div class="center-card text-center" id="banner-text">
+                        <button class="share-story-button">View Details&nbsp;<i class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Story title goes here</h5>
+                        <p class="card-text">story desc goes here</p>
+                        <div class="story-profile d-flex gap-2 align-items-center">
+                            <img src="~/Images/volunteer1.png" id="story-profile-img" height="40px" width="40px" />
+                            <span>kaushal oza</span>
+                        </div>
+                        @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 100%;;">
+                    <img class="card-img-top" src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap" />
+                    <div class="center-card text-center" id="banner-text">
+                       <button class="share-story-button">View Details&nbsp;<i class="bi bi-arrow-right"></i></button>
+                       </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Story title goes here</h5>
+                            <p class="card-text">story desc goes here</p>
+                            <div class="story-profile d-flex gap-2 align-items-center">
+                                <img src="~/Images/volunteer1.png" id="story-profile-img" height="40px" width="40px"/>
+                                <span>kaushal oza</span>
+                            </div>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 100%;;">
+                    <img class="card-img-top" src="~/Images/Grow-Trees-On-the-path-to-environment-sustainability-1.png" alt="Card image cap" />
+                    <div class="center-card text-center" id="banner-text">
+                       <button class="share-story-button">View Details&nbsp;<i class="bi bi-arrow-right"></i></button>
+                       </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Story title goes here</h5>
+                            <p class="card-text">story desc goes here</p>
+                            <div class="story-profile d-flex gap-2 align-items-center">
+                                <img src="~/Images/volunteer1.png" id="story-profile-img" height="40px" width="40px"/>
+                                <span>kaushal oza</span>
+                            </div>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*stories *@
+
+
+
+
+        @*Main data *@
+
+
+
+    @*pagination*@
+    <div class="d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item "><a class="page-link page-item-current" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+</body>
+<script src="~/js/index.js" defer></script>
+</html>
